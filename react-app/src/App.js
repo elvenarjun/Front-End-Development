@@ -3,7 +3,7 @@ import Tasks from './components/Tasks'
 import { useState } from 'react'
 
 function App() {
-  const [tasks,setTasks] = useState([
+  const [tasks,vadai] = useState([
     {
         id: 1,
         text: 'Doctors Appoitment',
@@ -18,7 +18,7 @@ function App() {
     },
     {
         id: 3,
-        text: 'Shopping',
+        text: 'suni',
         day: 'Feb 7th at 4:30pm',
         reminder: false,
     }
@@ -26,7 +26,7 @@ function App() {
 
 //Delete a task using FaTimes 'x' icon
 const deleteTask = (id) =>{
-  setTasks(tasks.filter((task)=> task.id !== id));
+  vadai(tasks.filter((x)=> x.id !== id));
 }
 
   return (
@@ -38,3 +38,4 @@ const deleteTask = (id) =>{
 }
 
 export default App;
+
