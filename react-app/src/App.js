@@ -54,4 +54,3 @@ const addTask = (task) => {
 }
 
 export default App;
-
